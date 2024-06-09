@@ -5,5 +5,10 @@ extension ImageExtension on String {
   String get svgImage => "assets/images/$this.svg";
   String get svgIcon => "assets/icons/$this.svg";
 
+//asset  Image and Icons extensions returning SvgPicture
+  // get svgAssetPngImage => SvgPicture.asset("assets/images/$this.png");
+  // get svgAssetJpgImage => SvgPicture.asset("assets/images/$this.jpg");
+  // get svgAssetSvgImage => SvgPicture.asset("assets/images/$this.svg");
+
   //extension to
 }

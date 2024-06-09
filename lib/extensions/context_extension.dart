@@ -9,4 +9,12 @@ extension Context on BuildContext {
           backgroundColor: backgroundColor ?? AppColors.primaryColor,
         ),
       );
+
+  alertDialog() {
+    return showDialog(
+        context: this,
+        builder: (context) {
+          return const AlertDialog();
+        });
+  }
 }

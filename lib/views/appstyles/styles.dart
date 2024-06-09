@@ -35,3 +35,15 @@ RoundedRectangleBorder rectangleBorder({
             )
           : BorderSide.none);
 }
+
+OutlineInputBorder outlineInputBorder({
+  int? radius,
+  Color? color,
+}) {
+  return OutlineInputBorder(
+      borderRadius: circularRadius(radius ?? brDefault),
+      borderSide: BorderSide(
+          color: color ?? AppColors.primaryColor,
+          width: 0.5,
+          style: BorderStyle.solid));
+}

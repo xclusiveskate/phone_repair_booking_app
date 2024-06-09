@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:repair_app/constants/colors.dart';
+import 'package:repair_app/constants/sizes.dart';
 import 'package:repair_app/views/appstyles/styles.dart';
 
 class AppElevatedButton extends StatelessWidget {
@@ -28,7 +29,7 @@ class AppElevatedButton extends StatelessWidget {
           elevation: 0.5,
           minimumSize: size ?? const Size(double.infinity, 50),
           shape: rectangleBorder(
-            radius: radius ?? 5,
+            radius: radius ?? brDefault.toDouble(),
           ),
         ),
         child: child,

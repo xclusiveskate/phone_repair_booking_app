@@ -1,9 +1,13 @@
 import 'package:repair_app/extensions/string_extension.dart';
 
-//IMAGES
+// ASSET IMAGES
 String logo = "logo".svgIcon;
 
-//ICONS
+// ASSET ICONS
+
+
+
+//NETWORK IMAGES
 
 
 
