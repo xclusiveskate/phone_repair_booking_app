@@ -17,4 +17,6 @@ extension Context on BuildContext {
           return const AlertDialog();
         });
   }
+
+  get mediaQuery => MediaQuery.of(this).size.height;
 }

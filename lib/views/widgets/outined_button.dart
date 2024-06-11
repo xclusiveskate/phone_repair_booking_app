@@ -3,13 +3,13 @@ import 'package:repair_app/constants/colors.dart';
 import 'package:repair_app/constants/sizes.dart';
 import 'package:repair_app/views/appstyles/styles.dart';
 
-class AppElevatedButton extends StatelessWidget {
+class CustomOutlinedButton extends StatelessWidget {
   final Widget child;
   final VoidCallback onPressed;
   final Color? backgroundColor;
   final double? radius;
   final Size? size;
-  const AppElevatedButton({
+  const CustomOutlinedButton({
     super.key,
     required this.child,
     required this.onPressed,
@@ -20,9 +20,9 @@ class AppElevatedButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return OutlinedButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
+      style: OutlinedButton.styleFrom(
         backgroundColor: backgroundColor ?? AppColors.primaryColor,
         elevation: 0.5,
         minimumSize: size ?? const Size(double.infinity, 50),

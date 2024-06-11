@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 //FONTS SIZES
+const size10 = 10.0;
 const size12 = 12.0;
 const size14 = 14.0;
 const size16 = 14.0;

@@ -44,6 +44,6 @@ OutlineInputBorder outlineInputBorder({
       borderRadius: circularRadius(radius ?? brDefault),
       borderSide: BorderSide(
           color: color ?? AppColors.primaryColor,
-          width: 0.5,
+          width: 1,
           style: BorderStyle.solid));
 }
