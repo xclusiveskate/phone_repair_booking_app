@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:repair_app/views/screens/Auth/signin.dart';
+import 'package:repair_app/views/screens/Auth/signup.dart';
 
 void main() {
   runApp(const MyApp());
