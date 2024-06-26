@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     //instantiate the  controller
     animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 20))
+        AnimationController(vsync: this, duration: Duration(seconds: 5))
           ..forward();
 
 //add a listener to the contoller
