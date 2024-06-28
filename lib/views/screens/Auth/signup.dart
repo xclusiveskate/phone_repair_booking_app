@@ -14,6 +14,7 @@ import 'package:repair_app/views/widgets/text_button.dart';
 import 'package:repair_app/views/widgets/text_form_input.dart';
 
 class SignUpPage extends StatefulWidget {
+  static const id = "/signup";
   const SignUpPage({super.key});
 
   @override

@@ -13,6 +13,7 @@ import 'package:repair_app/views/widgets/text_button.dart';
 import 'package:repair_app/views/widgets/text_form_input.dart';
 
 class SignInPage extends StatefulWidget {
+  static const id = "/signin";
   const SignInPage({super.key});
 
   @override

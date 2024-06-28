@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'views/screens/home/main_home.dart';
+import 'package:repair_app/routes/routes.dart';
+import 'package:repair_app/views/screens/home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      initialRoute: HomePage.id,
+      onGenerateRoute: RouteGenerator.routes,
     );
   }
 }

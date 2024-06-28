@@ -9,4 +9,7 @@ extension WidgetExtension on Widget {
       color: AppColors.blueColor,
     );
   }
+
+  MaterialPageRoute get pagesRoute =>
+      MaterialPageRoute(builder: (context) => this);
 }

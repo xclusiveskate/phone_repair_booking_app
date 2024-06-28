@@ -29,48 +29,60 @@ List<MenuItem> items = [
     title: "Profile",
     icon: Icons.person,
     function: (BuildContext context) {
-      Navigator.pop(context);
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ProfileScreen(),
-          ));
+      Navigator.popAndPushNamed(
+        context,
+        ProfileScreen.id,
+      );
+      // Navigator.pop(context);
+      // Navigator.pushNamed(
+      //   context,
+      //   ProfileScreen.profile,
+      // );
     },
   ),
   MenuItem(
     title: "Bookings",
     icon: Icons.book,
     function: (BuildContext context) {
-      Navigator.pop(context);
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => BookingsScreen(),
-          ));
+      Navigator.popAndPushNamed(
+        context,
+        BookingsScreen.id,
+      );
+      // Navigator.pop(context);
+      // Navigator.pushNamed(
+      //   context,
+      //   BookingsScreen.bookings,
+      // );
     },
   ),
   MenuItem(
     title: "Notification",
     icon: Icons.notifications,
     function: (BuildContext context) {
-      Navigator.pop(context);
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => NotificationScreen(),
-          ));
+      // Navigator.pop(context);
+      Navigator.popAndPushNamed(
+        context,
+        NotificationScreen.id,
+      );
+      // Navigator.pushNamed(
+      //   context,
+      //   NotificationScreen.notification,
+      // );
     },
   ),
   MenuItem(
     title: "Support",
     icon: Icons.support,
     function: (BuildContext context) {
-      Navigator.pop(context);
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SupportScreen(),
-          ));
+      Navigator.popAndPushNamed(
+        context,
+        SupportScreen.id,
+      );
+      // Navigator.pop(context);
+      // Navigator.pushNamed(
+      //   context,
+      //   SupportScreen.support,
+      // );
     },
   ),
 ];

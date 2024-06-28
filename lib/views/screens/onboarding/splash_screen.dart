@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:repair_app/extensions/string_extension.dart';
-import 'package:repair_app/views/screens/Auth/onboarding.dart';
+import 'package:repair_app/views/screens/onboarding/onboarding.dart';
 
 class SplashScreen extends StatefulWidget {
+  static const id = '/';
   const SplashScreen({super.key});
 
   @override
@@ -27,8 +28,7 @@ class _SplashScreenState extends State<SplashScreen>
       //check the status of the controller if it's running or is completed
       if (animationController!.status == AnimationStatus.completed) {
         //Navigate to the next page
-        Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => OnboardingScreen()));
+        Navigator.pushReplacementNamed(context, OnboardingScreen.id);
       }
     });
   }
@@ -46,6 +46,7 @@ class _SplashScreenState extends State<SplashScreen>
         body: Center(
       child: SizedBox(
           child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           AnimatedBuilder(
               animation: animationController!,

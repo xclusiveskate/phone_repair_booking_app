@@ -8,6 +8,7 @@ import 'package:repair_app/views/screens/Auth/signin.dart';
 // import 'package:repair_app/models/introduction.dart';
 
 class OnboardingScreen extends StatefulWidget {
+  static const id = '/onboarding';
   const OnboardingScreen({super.key});
 
   @override
