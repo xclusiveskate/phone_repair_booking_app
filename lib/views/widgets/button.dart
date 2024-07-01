@@ -3,13 +3,13 @@ import 'package:repair_app/constants/colors.dart';
 import 'package:repair_app/constants/sizes.dart';
 import 'package:repair_app/views/appstyles/styles.dart';
 
-class AppElevatedButton extends StatelessWidget {
+class CustomElevatedButton extends StatelessWidget {
   final Widget child;
   final VoidCallback onPressed;
   final Color? backgroundColor;
   final double? radius;
   final Size? size;
-  const AppElevatedButton({
+  const CustomElevatedButton({
     super.key,
     required this.child,
     required this.onPressed,

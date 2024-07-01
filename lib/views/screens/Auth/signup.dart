@@ -154,7 +154,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 ],
               ),
               10.height,
-              AppElevatedButton(
+              CustomElevatedButton(
                 child: Text(
                   "Get Started",
                   style: appTextStyle(

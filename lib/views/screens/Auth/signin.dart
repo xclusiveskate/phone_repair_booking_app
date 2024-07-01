@@ -124,7 +124,7 @@ class _SignInPageState extends State<SignInPage> {
                           isPassword: true,
                         ),
                         30.height,
-                        AppElevatedButton(
+                        CustomElevatedButton(
                             child: Text(
                               "Sign In",
                               style: appTextStyle(

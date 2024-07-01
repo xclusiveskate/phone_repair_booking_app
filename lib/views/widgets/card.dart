@@ -17,19 +17,16 @@ class AppCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: SizedBox(
-        height: cardHeight,
-        width: cardWidth,
-        child: Card(
-          color: cardColor,
-          elevation: 0.5,
-          shape: rectangleBorder(
-            radius: radius,
-          ),
-          child: child,
+    return SizedBox(
+      height: cardHeight,
+      width: cardWidth,
+      child: Card(
+        color: cardColor,
+        elevation: 0.5,
+        shape: rectangleBorder(
+          radius: radius,
         ),
+        child: child,
       ),
     );
   }

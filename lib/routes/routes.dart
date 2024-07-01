@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:repair_app/extensions/widgets.dart';
 import 'package:repair_app/views/screens/Auth/signin.dart';
 import 'package:repair_app/views/screens/Auth/signup.dart';
-import 'package:repair_app/views/screens/home/bookings.dart';
+import 'package:repair_app/views/screens/bookings/bookings.dart';
 import 'package:repair_app/views/screens/home/error.dart';
 import 'package:repair_app/views/screens/home/home.dart';
-import 'package:repair_app/views/screens/home/notification.dart';
-import 'package:repair_app/views/screens/home/profile.dart';
-import 'package:repair_app/views/screens/home/support.dart';
+import 'package:repair_app/views/screens/notification/notification.dart';
 import 'package:repair_app/views/screens/onboarding/onboarding.dart';
 import 'package:repair_app/views/screens/onboarding/splash_screen.dart';
+import 'package:repair_app/views/screens/profile/profile.dart';
+import 'package:repair_app/views/screens/support/support.dart';
 
 class RouteGenerator {
   static Route<dynamic> routes(RouteSettings settings) {

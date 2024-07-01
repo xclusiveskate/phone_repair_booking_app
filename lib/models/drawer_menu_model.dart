@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:repair_app/views/screens/home/bookings.dart';
-import 'package:repair_app/views/screens/home/notification.dart';
-import 'package:repair_app/views/screens/home/profile.dart';
-import 'package:repair_app/views/screens/home/support.dart';
+import 'package:repair_app/views/screens/bookings/bookings.dart';
+import 'package:repair_app/views/screens/notification/notification.dart';
+import 'package:repair_app/views/screens/profile/profile.dart';
+import 'package:repair_app/views/screens/support/support.dart';
 
 class MenuItem {
   final String title;
@@ -17,7 +17,7 @@ class MenuItem {
   });
 }
 
-List<MenuItem> items = [
+List<MenuItem> drawerItems = [
   MenuItem(
     title: "Home",
     icon: Icons.home,
@@ -78,11 +78,16 @@ List<MenuItem> items = [
         context,
         SupportScreen.id,
       );
-      // Navigator.pop(context);
-      // Navigator.pushNamed(
-      //   context,
-      //   SupportScreen.support,
-      // );
+    },
+  ),
+  MenuItem(
+    title: "About Us",
+    icon: Icons.question_mark_rounded,
+    function: (BuildContext context) {
+      Navigator.popAndPushNamed(
+        context,
+        SupportScreen.id,
+      );
     },
   ),
 ];
