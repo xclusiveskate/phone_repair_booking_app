@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:repair_app/extensions/widgets.dart';
 import 'package:repair_app/views/screens/Auth/signin.dart';
 import 'package:repair_app/views/screens/Auth/signup.dart';
+import 'package:repair_app/views/screens/about/about.dart';
 import 'package:repair_app/views/screens/bookings/bookings.dart';
 import 'package:repair_app/views/screens/home/error.dart';
 import 'package:repair_app/views/screens/home/home.dart';
@@ -32,6 +33,8 @@ class RouteGenerator {
         return NotificationScreen().pagesRoute;
       case SupportScreen.id:
         return SupportScreen().pagesRoute;
+      case AboutScreen.id:
+        return AboutScreen().pagesRoute;
 
       default:
         return ErrorScreen(name: settings.name!).pagesRoute;

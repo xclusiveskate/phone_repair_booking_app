@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:repair_app/views/screens/about/about.dart';
 import 'package:repair_app/views/screens/bookings/bookings.dart';
 import 'package:repair_app/views/screens/notification/notification.dart';
 import 'package:repair_app/views/screens/profile/profile.dart';
@@ -86,7 +87,7 @@ List<MenuItem> drawerItems = [
     function: (BuildContext context) {
       Navigator.popAndPushNamed(
         context,
-        SupportScreen.id,
+        AboutScreen.id,
       );
     },
   ),
